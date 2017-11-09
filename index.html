@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Basic -->
+    <title>Alpha Photography</title>
+    
+    <meta property="og:site_name" content="ALPHA PHOTOGRAPHY" />
+    <meta property="og:title" content="Alpha Photography | Ananth Eswar" />
+    <meta property="og:url" content="http://alphaphotography.me/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Portraiture, Fashion, Nature, Table top & Travel Photography based out of Hyderabad" />
+    <meta property="og:image" content="http://alphaphotography.me/images/Alphalogo.jpg" />
+
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">    
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <style>
+        .ig-b- {
+            display: inline-block;
+        }
+
+            .ig-b- img {
+                visibility: hidden;
+            }
+
+            .ig-b-:hover {
+                background-position: 0 -60px;
+            }
+
+            .ig-b-:active {
+                background-position: 0 -120px;
+            }
+
+        .ig-b-v-24 {
+            width: 137px;
+            height: 24px;
+            background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0;
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+            .ig-b-v-24 {
+                background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png);
+                background-size: 160px 178px;
+            }
+        }
+    </style>
+
+</head>
+
+<body ng-app='alphaPhotographyApp' ng-controller="homeController">
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header >
+               
+        <!-- Start  Logo & Naviagtion  -->
+        <div class="navbar navbar-default navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Stat Toggle Nav Link For Mobiles -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!--<span class="helper"></span>-->
+                    <!-- End Toggle Nav Link For Mobiles -->
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="logo" class="logo1" src="images/homelogo3.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    
+                    <!-- Start Navigation List -->
+                    <ul id="navbarmenu" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="active" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-content">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about-content">About Me</a>
+                        </li>
+                    </ul>
+                    <!-- End Navigation List -->
+                </div>
+            </div>
+        </div>
+        <!-- End Header Logo & Naviagtion -->
+
+    </header>
+    <!-- End Header Section -->
+    
+    <!-- Start Body -->
+    <div>
+        <!-- Start Home Page Slider -->
+        <section id="home">
+            <!-- Carousel -->
+            <div id="main-slide" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-slide" data-slide-to="1"></li>
+                    <li data-target="#main-slide" data-slide-to="2"></li>
+                    <li data-target="#main-slide" data-slide-to="3"></li>
+                    <li data-target="#main-slide" data-slide-to="4"></li>
+                </ol>
+                <!--/ Indicators end-->
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">
+                        <div class="slider-content">
+                            <div class="col-md-12 text-center">
+                                <!--<h2 class="animated2">
+                                    
+                                    <span>Welcome to <strong>Alpha Photography</strong></span>
+                                </h2>
+                                <p class="animated3">
+                                    <a href="#contact-content" class="slider btn btn-system btn-large">GET IN TOUCH</a>
+                                </p>-->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Carousel item end -->
+                    <div class="item">
+                        <img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">
+                        <div class="slider-content">
+                            <div class="col-md-12 text-center">
+                                <h3 class="animated5">
+                                    <span>Check out my Portfolio!</span>
+                                </h3>
+                                <p class="animated6">
+                                    <a href="portfolio.html" class="slider btn btn-system btn-large">Show Me</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Carousel item end -->
+                    <div class="item">
+                        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
+                    </div>
+                    <!--/ Carousel item end -->
+                    <div class="item">
+                        <img class="img-responsive" src="images/slider/bg4.jpg" alt="slider">
+                    </div>
+                    <!--/ Carousel item end -->
+                    <div class="item">
+                        <img class="img-responsive" src="images/slider/bg5.jpg" alt="slider">
+                    </div>
+                    <!--/ Carousel item end -->
+                </div>
+                <!-- Carousel inner end-->
+                <!-- Controls -->
+                <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                    <span><i class="fa fa-angle-left" style="font-size:2vw; padding: 1vw 1.5vw 1vw 1vw;"></i></span>
+                </a>
+                <a class="right carousel-control" href="#main-slide" data-slide="next">
+                    <span ><i class="fa fa-angle-right" style="font-size:2vw; padding: 1vw 1.5vw 1vw 1vw;"></i></span>
+                </a>
+            </div>
+            <!-- /carousel -->
+        </section>
+    </div>
+        <!-- End Home Page Slider -->
+
+    <!-- Start Recent Projects -->
+    <div id="about-content" class="project" angular-lazy-load>
+        <div class="container">
+            <div class="recent-projects">
+                <h4 class="title"><span>Recent Projects</span></h4>
+                <div class="projects-carousel touch-carousel">
+
+                    <div class="portfolio-item item" ng-repeat="x in recentProjects">
+                        <div class="portfolio-border">
+                            <div class="portfolio-thumb">
+                                <a href="projects.html?id={{x.id}}">
+                                    <div class="thumb-overlay"></div>
+                                    <img alt="{{x.title}}" ng-src="{{x.image}}" />
+
+                                </a>
+                            </div>
+                            <div class="portfolio-details">
+                                <a href="projects.html?id={{x.id}}">
+                                    <h4>{{x.title}}</h4>
+                                    <span>{{x.shortDescription}}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End Recent Projects -->
+        <!-- Start Portfolio Section -->
+        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+            <!-- Start Big Heading -->
+            <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+                <h1><strong>Recent Work</strong></h1>
+            </div>
+            <!-- End Big Heading -->
+            <!-- Start Latest Work Carousel -->
+            <p class="text-center">
+                Here are some of the photos I have shot recently.
+            </p>
+
+            <!--<ng-image-gallery images="recentworkImages" methods="methods" on-open="openGallery1();" on-close="closed();"></ng-image-gallery>-->
+            <ng-image-gallery images="recentworkImages" methods="methods"></ng-image-gallery>
+
+            <!--<div id="lightgallery">
+                <a ng-repeat="x  in portfolioImages" href="{{x.thumb}}">
+                    <img src="{{x.image}}" style="margin-bottom:3px;width:24.7%" />
+                </a>
+            </div>-->
+            <!-- End Latest Work Carousel -->
+        </div>
+        <!-- End Portfolio Section -->
+        <!-- Start Testimonials Section -->
+        <div id="testimonials-content">
+            <div class="container">
+
+                <div>
+
+                    <!-- Classic Heading -->
+                    <h4 class="classic-title"><span>Testimonials</span></h4>
+
+                    <!-- Start Testimonials Carousel -->
+                    <div class="testimonials-carousel show-one-slide touch-carousel" data-appeared-items="2">
+                        <!--<div class="testimonials-carousel show-one-slide touch-carousel" data-appeared-items="1">-->
+
+                            <div class="classic-testimonials item" ng-repeat="x in testimonials">
+                                <div class="testimonial-content">
+                                    <img ng-src="{{x.image}}" />
+                                    <p>{{x.content}}</p>
+                                </div>
+                                <div class="testimonial-author"><span>{{x.author}}</span>{{x.authorDescription}}</div>
+                            </div>
+                        </div>
+                    <!-- End Testimonials Carousel -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End Testimonials Section -->
+        <!-- Divider -->
+        <div class="hr1 margin-60"></div>
+    </div>
+    <!-- End Body -->
+
+    <!-- Start About Me -->
+    <div id="about-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-10">
+                    <!-- Start Big Heading -->
+                    <div class="big-title">
+                        <h1><span class="accent-color">About Me!</span></h1>
+                    </div>
+                    <!-- End Big Heading -->
+                    <!-- Some Text -->
+                    <p>Hello! This is Ananth. I'm a software professional passionate about photography. I have been clicking photos since three years now. 
+                    I like clicking everything around especially, table top, landscapes, candid moments and fashion. 
+                    I do this because I feel happy looking at the end result of my work and
+                    I like to look things in a more dramatic and beautiful way than they actually are. This is a life time learning for me and I'm happy to have recieved multiple awards/ publications for photography in the process. 
+                    I hope to keep doing this as long as I can. If you need to get a good picture, let me know. I will try my best not to disappoint you. </p>
+                    I believe "Every thing you do is a reflection of what you are! Signature your work!"
+                    <!-- Divider -->
+                    <div class="hr1" style="margin-bottom:10px;"></div>
+                </div>
+
+                <!-- Start Memebr 1 -->
+                <div class="col-md-2 col-sm-6 col-xs-8">
+                    <div class="team-member modern">
+                        <!-- Memebr Photo, Name & Position -->
+                        <div angular-lazy-load class="member-photo">
+                            <img alt="" data-src="images/me.jpg" />
+                            <div class="member-name">Ananth Eswar </div>
+                        </div>
+                        <!-- Memebr Social Links -->
+                        <div class="member-socail">
+                            <a target="_blank" class="facebook" href="https://www.facebook.com/anantheswarg881"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" class="twitter" href="https://twitter.com/anantheswarg881"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" class="gplus" href="https://plus.google.com/102953860646103518201/posts"><i class="fa fa-google-plus"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/ananth-eswar-g-46265848/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Memebr 1 -->
+            </div>
+        </div>
+    </div>
+    <!-- End About Me -->
+    <!-- Start Footer Section -->
+    <footer>
+        <!-- End About Me -->
+        <!-- Start Contact -->
+        <div id="contact-content">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-8">
+
+                        <!-- Classic Heading -->
+                        <h4 class="contact-title"><span>CONTACT</span></h4>
+
+                        <!-- Start Contact Form -->
+                        <form role="form" class="contact-form" id="contact-form" method="post" action="mailto:alphaphotography881@gmail.com" enctype="text/plain">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="text" placeholder="Name" name="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="email" class="email" placeholder="Email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="text" class="requiredField" placeholder="Subject" name="subject">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="controls">
+                                    <textarea rows="7" placeholder="Message" name="message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
+                        </form>
+                        <!-- End Contact Form -->
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <!-- Classic Heading -->
+                        <h4 class="contact-title"><span>GET IN TOUCH</span></h4>
+
+                        <!-- Some Info -->
+                        <p>Feel free to drop a message or give me a ring!</p>
+
+                        <!-- Divider -->
+                        <div class="hr1" style="margin-bottom:10px;"></div>
+
+                        <!-- Info - Icons List -->
+                        <ul class="icons-list">
+                            <li><i class="fa fa-globe">  </i> <strong>Address:</strong> H 905, Jains Carlton Creek, Khajaguda, Hyderabad, India. PIN: 500089</li>
+                            <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> alphaphotography881@gmail.com</li>
+                            <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> <strong>+91 9030453421</strong></li>
+                        </ul>
+
+                        <!-- Divider -->
+                        <div class="hr1" style="margin-bottom:15px;"></div>
+                        <div class="footer-widget social-widget">
+                            <h4>Follow Alpha photography<span class="head-line"></span></h4>
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" class="facebook" href="http://facebook.com/alphaarts.in"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="twitter" href="https://twitter.com/AlphaFotography"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instgram" href="https://www.instagram.com/alphaphotography881/"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>                        
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End Contact -->
+        <!-- Start Copyright -->
+        <div class="container">
+
+            <div class="copyright-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2017 Alpha Photography -  All Rights Reserved </p>
+                    </div>
+                </div><!-- .row -->
+            </div>
+
+        </div>
+        <!-- End Copyright -->
+
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <div id="loader">
+        <div class="spinner">
+            <img src="images/spinner.png" />
+        </div>
+        <span class="accent-color loadingText"> Just a moment...</span>
+        <div class="loadingAlpha">
+            <img src="images/spinner-alpha.png" />
+        </div>
+
+    </div>
+</body>
+</html>

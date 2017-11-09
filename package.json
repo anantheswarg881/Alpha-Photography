@@ -1,0 +1,25 @@
+{
+  "name": "alpha photography",
+  "version": "1.0.0",
+  "description": "alpha photography",
+  "main": "index.html",
+  "keywords": [
+    "alphaphotography",
+    "photography",
+    "photoshoot",
+    "couple",
+    "prewedding",
+    "postwedding",
+    "wedding",
+    "kidsphotography",
+    "portfolioshoot",
+    "modelshoot"
+  ],
+  "author": "Ananth Eswar",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.2.0"
+  }
+}

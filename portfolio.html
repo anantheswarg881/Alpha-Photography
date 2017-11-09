@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Basic -->
+    <title>Alpha Photography</title>
+    
+    <meta property="og:site_name" content="ALPHA PHOTOGRAPHY" />
+    <meta property="og:title" content="Alpha Photography | Ananth Eswar" />
+    <meta property="og:url" content="http://alphaphotography.me/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Portraiture, Fashion, Nature, Table top & Travel Photography based out of Hyderabad" />
+    <meta property="og:image" content="http://alphaphotography.me/images/Alphalogo.jpg" />
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header >
+               
+        <!-- Start  Logo & Naviagtion  -->
+        <div class="navbar navbar-default navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Stat Toggle Nav Link For Mobiles -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <span class="helper"></span>
+                    <!-- End Toggle Nav Link For Mobiles -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo1" alt="logo" src="images/homelogo3.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    
+                    <!-- Start Navigation List -->
+                    <ul id="navbarmenu" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-content">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about-content">About Me</a>
+                        </li>
+                    </ul>
+                    <!-- End Navigation List -->
+                </div>
+            </div>
+        </div>
+        <!-- End Header Logo & Naviagtion -->
+
+    </header>
+    <!-- End Header Section -->
+
+
+
+    <div ng-app='alphaPhotographyApp' ng-controller="portfolioController">
+
+        <div class="navbar navbar-default navbar-top">
+            <div class="container">
+            <div class="navbar-header">
+            <ul id="navbarmenu1" class="nav navbar-nav navbar-right">
+                <li>
+                    <a id="allTag" href="#" ng-click="applyFilter('')">All</a>
+                </li>
+                <li>
+                    <!--<a href="#portraits" >Portraits</a>-->
+                    <a id="portraitTag" href="#portraits" target="_self" ng-click="applyFilter('portraits')">Portraits</a>
+                </li>
+                <li>
+                    <a id="coupleTag" href="#couple" ng-click="applyFilter('couple')">Couple</a>
+                </li>
+                <li>
+                    <a id="toysTag" href="#toys" ng-click="applyFilter('toys')">Toys</a>
+                </li>
+                <li>
+                    <a id="fashionTag" href="#fashion" ng-click="applyFilter('fashion')">Fashion</a>
+                </li>
+                <li>
+                    <!--<a href="#landscapes" >Landscapes</a>-->
+                    <a id="landscapesTag" href="#landscapes" target="_self" ng-click="applyFilter('landscapes')">Landscapes</a>
+                </li>
+                <li>
+                    <a id="kidsTag" href="#kids" ng-click="applyFilter('kids')">Kids</a>
+                </li>
+                <li>
+                    <a id="randomTag" href="#random" ng-click="applyFilter('random')">Random</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+
+        <ng-image-gallery images="activeImages" ></ng-image-gallery>
+        <!--<ng-image-gallery images="activeImages" methods="methods" on-open="openGallery1();" on-close="closed();"></ng-image-gallery>-->
+
+    </div>
+
+    <!-- Start About Me -->
+    <div id="about-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-10">
+                    <!-- Start Big Heading -->
+                    <div class="big-title">
+                        <h1><span class="accent-color">About Me!</span></h1>
+                    </div>
+                    <!-- End Big Heading -->
+                    <!-- Some Text -->
+                    <p>Hello! This is Ananth. I'm a software professional passionate about photography. I have been clicking photos since three years now. 
+                    I like clicking everything around especially, table top, landscapes, candid moments and fashion. 
+                    I do this because I feel happy looking at the end result of my work and
+                    I like to look things in a more dramatic and beautiful way than they actually are. This is a life time learning for me and I'm happy to have recieved multiple awards/ publications for photography in the process. 
+                    I hope to keep doing this as long as I can. If you need to get a good picture, let me know. I will try my best not to disappoint you. </p>
+                    I believe "Every thing you do is a reflection of what you are! Signature your work!"
+                    <!-- Divider -->
+                    <div class="hr1" style="margin-bottom:10px;"></div>
+                </div>
+
+                <!-- Start Memebr 1 -->
+                <div class="col-md-2 col-sm-6 col-xs-8">
+                    <div class="team-member modern">
+                        <!-- Memebr Photo, Name & Position -->
+                        <div class="member-photo">
+                            <img alt="" src="images/me.jpg" />
+                            <div class="member-name">Ananth Eswar </div>
+                        </div>
+                        <!-- Memebr Social Links -->
+                        <div class="member-socail">
+                            <a target="_blank" class="facebook" href="https://www.facebook.com/anantheswarg881"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" class="twitter" href="https://twitter.com/anantheswarg881"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" class="gplus" href="https://plus.google.com/102953860646103518201/posts"><i class="fa fa-google-plus"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/ananth-eswar-g-46265848/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Memebr 1 -->
+            </div>
+        </div>
+    </div>
+    <!-- End About Me -->
+    <!-- Start Footer Section -->
+    <footer>
+        <!-- End About Me -->
+        <!-- Start Contact -->
+        <div id="contact-content">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-8">
+
+                        <!-- Classic Heading -->
+                        <h4 class="contact-title"><span>CONTACT</span></h4>
+
+                        <!-- Start Contact Form -->
+                        <form role="form" class="contact-form" id="contact-form" method="post">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="text" placeholder="Name" name="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="email" class="email" placeholder="Email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="text" class="requiredField" placeholder="Subject" name="subject">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="controls">
+                                    <textarea rows="7" placeholder="Message" name="message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
+                        </form>
+                        <!-- End Contact Form -->
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <!-- Classic Heading -->
+                        <h4 class="contact-title"><span>GET IN TOUCH</span></h4>
+
+                        <!-- Some Info -->
+                        <p>Feel free to drop a message or give me a ring!</p>
+
+                        <!-- Divider -->
+                        <div class="hr1" style="margin-bottom:10px;"></div>
+
+                        <!-- Info - Icons List -->
+                        <ul class="icons-list">
+                            <li><i class="fa fa-globe">  </i> <strong>Address:</strong>  H 905, Jains Carlton Creek, Khajaguda, Hyderabad, India. PIN: 500089</li>
+                            <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> alphaphotography881@gmail.com</li>
+                            <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> <strong>+91 9030453421</strong></li>
+                        </ul>
+
+                        <!-- Divider -->
+                        <div class="hr1" style="margin-bottom:15px;"></div>
+                        <div class="footer-widget social-widget">
+                            <h4>Follow Alpha photography<span class="head-line"></span></h4>
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" class="facebook" href="http://facebook.com/alphaarts.in"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="twitter" href="https://twitter.com/AlphaFotography"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instgram" href="https://www.instagram.com/alphaphotography881/"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>                        
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End Contact -->
+        <!-- Start Copyright -->
+        <div class="container">
+
+            <div class="copyright-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2017 Alpha Photography -  All Rights Reserved </p>
+                    </div>
+                </div><!-- .row -->
+            </div>
+
+        </div>
+        <!-- End Copyright -->
+
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <div id="loader">
+        <div class="spinner">
+            <img src="images/spinner.png" />
+        </div>
+        <span class="accent-color  loadingText"> Just a moment...</span>
+        <div class="loadingAlpha">
+            <img src="images/spinner-alpha.png" />
+        </div>
+    </div>
+    
+</body>
+</html>
