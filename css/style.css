@@ -5077,6 +5077,11 @@ ul.footer-nav {
     -ms-transform: translate3d(0,0,0);
 }
 
+#navbarmenu1 li{
+    display: inline-block;
+    width: inherit;
+}
+
 /* CSS3 Transitions */
 
 .owl-origin {

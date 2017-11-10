@@ -1,31 +1,31 @@
-var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery', 'angular-lazy-loader']);
-//app.config(function (ngImageGalleryOptsProvider) {
+//var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery', 'angular-lazy-loader', 'ngRoute']);
+////app.config(function (ngImageGalleryOptsProvider) {
+////    ngImageGalleryOptsProvider.setOpts({
+////        thumbnails: true,
+////        //inline      :   true,
+////        bubbles: true,
+////        imgBubbles: true,
+////        bgClose: false
+////    });
+////});
+
+//app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
 //    ngImageGalleryOptsProvider.setOpts({
 //        thumbnails: true,
-//        //inline      :   true,
+//        thumbSize: 120,
+//        inline: false,
 //        bubbles: true,
+//        bubbleSize: 100,
 //        imgBubbles: true,
-//        bgClose: false
+//        bgClose: false,
+//        piracy: false,
+//        imgAnim: 'fadeup',
+//        bgClose: true
 //    });
-//});
-
-app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
-    ngImageGalleryOptsProvider.setOpts({
-        thumbnails: true,
-        thumbSize: 120,
-        inline: false,
-        bubbles: true,
-        bubbleSize: 100,
-        imgBubbles: true,
-        bgClose: false,
-        piracy: false,
-        imgAnim: 'fadeup',
-        bgClose: true
-    });
-}])
+//}])
 
 
-app.controller('homeController', function($scope) {
+angular.module('alphaPhotographyApp').controller('homeController', function($scope) {
     
     var recentworkFolder = 'images/recentwork/';
     var recentworkThumbFolder = 'images/recentwork/thumb/';

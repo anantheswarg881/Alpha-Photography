@@ -54,11 +54,11 @@ $(document).ready(function ($) {
     /*---------------------------------------------------*/
     
     
-    $('.skill-shortcode').appear(function() {
-  		$('.progress').each(function(){ 
-    		$('.progress-bar').css('width',  function(){ return ($(this).attr('data-percentage')+'%')});
-  		});
-	},{accY: -100});
+    //$('.skill-shortcode').appear(function() {
+  	//	$('.progress').each(function(){ 
+    //		$('.progress-bar').css('width',  function(){ return ($(this).attr('data-percentage')+'%')});
+  	//	});
+	//},{accY: -100});
 	
 	
 	
@@ -68,11 +68,11 @@ $(document).ready(function ($) {
     
     
     
-    $('.timer').countTo();
+    //$('.timer').countTo();
 
-    $('.counter-item').appear(function() {
-        $('.timer').countTo();
-    },{accY: -100});
+    //$('.counter-item').appear(function() {
+    //    $('.timer').countTo();
+    //},{accY: -100});
     
     
 	
@@ -724,16 +724,16 @@ window.onunload = function(e) {
 //setActiveStyleSheet(title);
 
 
-function MenuChange(index) {
-    ////this code may not useful
-    //$(".menuLink").each(function () {
-    //    $(this).removeClass("active");
-    //});
+//function MenuChange(index) {
+//    ////this code may not useful
+//    //$(".menuLink").each(function () {
+//    //    $(this).removeClass("active");
+//    //});
 
-    var currentLink = $("#navbarmenu").children().eq(index).children().eq(0);
-    $(currentLink).addClass("active");
+//    var currentLink = $("#navbarmenu").children().eq(index).children().eq(0);
+//    $(currentLink).addClass("active");
 
-}
+//}
 
 $(document).ready(function(){
 	

@@ -1,29 +1,29 @@
-var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery']);
-//app.config(function (ngImageGalleryOptsProvider) {
+//var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery', 'ngRoute']);
+////app.config(function (ngImageGalleryOptsProvider) {
+////    ngImageGalleryOptsProvider.setOpts({
+////        thumbnails: true,
+////        //inline      :   true,
+////        bubbles: true,
+////        imgBubbles: true,
+////        bgClose     :   false
+////    });
+////});
+
+//app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
 //    ngImageGalleryOptsProvider.setOpts({
 //        thumbnails: true,
-//        //inline      :   true,
+//        thumbSize: 120,
+//        inline: false,
 //        bubbles: true,
+//        bubbleSize: 100,
 //        imgBubbles: true,
-//        bgClose     :   false
+//        bgClose: false,
+//        piracy: false,
+//        imgAnim: 'fadeup',
+//        bgClose: true
 //    });
-//});
-
-app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
-    ngImageGalleryOptsProvider.setOpts({
-        thumbnails: true,
-        thumbSize: 120,
-        inline: false,
-        bubbles: true,
-        bubbleSize: 100,
-        imgBubbles: true,
-        bgClose: false,
-        piracy: false,
-        imgAnim: 'fadeup',
-        bgClose: true
-    });
-}])
-app.controller('portfolioController', function ($scope, $location, $window) {
+//}])
+angular.module('alphaPhotographyApp').controller('portfolioController', function ($scope, $location, $window) {
 
     var getCategory = function () {
 
@@ -52,7 +52,7 @@ app.controller('portfolioController', function ($scope, $location, $window) {
 	    for (var i = 0; i < imageCount; i++) {
 	        var imgPath = portfolioFolder + category + '/' + (i + 1) + '.jpg';
 	        var thumbPath = portfolioThumbFolder + category + '/' + (i + 1) + '.jpg';
-	        images.push({ id: (i+1), thumbUrl: thumbPath, url: imgPath, category: category });
+	        images.push({ id: (category + i + 1), thumbUrl: thumbPath, url: imgPath, category: category });
 	    }
 	};
     	
@@ -65,13 +65,13 @@ app.controller('portfolioController', function ($scope, $location, $window) {
 	$scope.coupleImages = [];
 	$scope.fashionImages = [];
 	$scope.randomImages = [];
-	$scope.addImageCategories($scope.landscapesImages, 9, 'landscapes');
+	$scope.addImageCategories($scope.landscapesImages, 12, 'landscapes');
 	$scope.addImageCategories($scope.portraitImages, 4, 'portraits');
-	$scope.addImageCategories($scope.kidsImages, 4, 'kids');
-	$scope.addImageCategories($scope.toysImages, 2, 'toys');
-	$scope.addImageCategories($scope.coupleImages, 3, 'couple');
-	$scope.addImageCategories($scope.fashionImages, 2, 'fashion');
-	$scope.addImageCategories($scope.randomImages, 12, 'random');
+	$scope.addImageCategories($scope.kidsImages, 6, 'kids');
+	$scope.addImageCategories($scope.toysImages, 4, 'toys');
+	$scope.addImageCategories($scope.coupleImages, 8, 'couple');
+	$scope.addImageCategories($scope.fashionImages, 14, 'fashion');
+	$scope.addImageCategories($scope.randomImages, 16, 'random');
 
 	$scope.portfolioImages = [];
 
@@ -136,11 +136,11 @@ app.controller('portfolioController', function ($scope, $location, $window) {
 	        anchorTag.addClass('active');
 	};
 
-	$("a").click(function () {
-	    $("#navbarmenu1>li>a.active").removeClass("active");
+	//$("a").click(function () {
+	//    $("#navbarmenu1>li>a.active").removeClass("active");
 
-	    $(this).addClass("active");
-	});
+	//    $(this).addClass("active");
+	//});
 
 	$scope.methods = {};
 	$scope.openGallery = function () {

@@ -1,0 +1,159 @@
+﻿<!-- Start Body -->
+<div>
+    <!-- Start Home Page Slider -->
+    <section id="home">
+        <!-- Carousel -->
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+                <li data-target="#main-slide" data-slide-to="3"></li>
+                <li data-target="#main-slide" data-slide-to="4"></li>
+            </ol>
+            <!--/ Indicators end-->
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <!--<h2 class="animated2">
+
+                                <span>Welcome to <strong>Alpha Photography</strong></span>
+                            </h2>
+                            <p class="animated3">
+                                <a href="#contact-content" class="slider btn btn-system btn-large">GET IN TOUCH</a>
+                            </p>-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h3 class="animated5">
+                                <span>Check out my Portfolio!</span>
+                            </h3>
+                            <p class="animated6">
+                                <a href="portfolio.html" class="slider btn btn-system btn-large">Show Me</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
+                </div>
+                <!--/ Carousel item end -->
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg4.jpg" alt="slider">
+                </div>
+                <!--/ Carousel item end -->
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg5.jpg" alt="slider">
+                </div>
+                <!--/ Carousel item end -->
+            </div>
+            <!-- Carousel inner end-->
+            <!-- Controls -->
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                <span><i class="fa fa-angle-left" style="font-size:2vw; padding: 1vw 1.5vw 1vw 1vw;"></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+                <span><i class="fa fa-angle-right" style="font-size:2vw; padding: 1vw 1.5vw 1vw 1vw;"></i></span>
+            </a>
+        </div>
+        <!-- /carousel -->
+    </section>
+</div>
+<!-- End Home Page Slider -->
+<!-- Start Recent Projects -->
+<div class="project" angular-lazy-load>
+    <div class="container">
+        <div class="recent-projects">
+            <h4 class="title"><span>Recent Projects</span></h4>
+            <div class="projects-carousel touch-carousel">
+
+                <div class="portfolio-item item" ng-repeat="x in recentProjects">
+                    <div class="portfolio-border">
+                        <div class="portfolio-thumb">
+                            <a href="projects?id={{x.id}}">
+                                <div class="thumb-overlay"></div>
+                                <img alt="{{x.title}}" ng-src="{{x.image}}" />
+
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <a href="projects?id={{x.id}}">
+                                <h4>{{x.title}}</h4>
+                                <span>{{x.shortDescription}}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End Recent Projects -->
+    <!-- Start Portfolio Section -->
+    <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+        <!-- Start Big Heading -->
+        <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+            <h1><strong>Recent Work</strong></h1>
+        </div>
+        <!-- End Big Heading -->
+        <!-- Start Latest Work Carousel -->
+        <p class="text-center">
+            Here are some of the photos I have shot recently.
+        </p>
+
+        <!--<ng-image-gallery images="recentworkImages" methods="methods" on-open="openGallery1();" on-close="closed();"></ng-image-gallery>-->
+        <ng-image-gallery images="recentworkImages" methods="methods"></ng-image-gallery>
+
+        <!--<div id="lightgallery">
+            <a ng-repeat="x  in portfolioImages" href="{{x.thumb}}">
+                <img src="{{x.image}}" style="margin-bottom:3px;width:24.7%" />
+            </a>
+        </div>-->
+        <!-- End Latest Work Carousel -->
+    </div>
+    <!-- End Portfolio Section -->
+    <!-- Start Testimonials Section -->
+    <div id="testimonials-content">
+        <div class="container">
+
+            <div>
+
+                <!-- Classic Heading -->
+                <h4 class="classic-title"><span>Testimonials</span></h4>
+
+                <!-- Start Testimonials Carousel -->
+                <div class="testimonials-carousel show-one-slide touch-carousel" data-appeared-items="2">
+                    <!--<div class="testimonials-carousel show-one-slide touch-carousel" data-appeared-items="1">-->
+
+                    <div class="classic-testimonials item" ng-repeat="x in testimonials">
+                        <div class="testimonial-content">
+                            <img ng-src="{{x.image}}" />
+                            <p>{{x.content}}</p>
+                        </div>
+                        <div class="testimonial-author"><span>{{x.author}}</span>{{x.authorDescription}}</div>
+                    </div>
+                </div>
+                <!-- End Testimonials Carousel -->
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End Testimonials Section -->
+    <!-- Divider -->
+    <div class="hr1 margin-60"></div>
+</div>
+<!-- End Body -->

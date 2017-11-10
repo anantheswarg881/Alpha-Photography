@@ -1,29 +1,29 @@
-var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery']);
-//app.config(function (ngImageGalleryOptsProvider) {
-//        ngImageGalleryOptsProvider.setOpts({
+//var app = angular.module('alphaPhotographyApp', ['thatisuday.ng-image-gallery', 'ngRoute']);
+////app.config(function (ngImageGalleryOptsProvider) {
+////        ngImageGalleryOptsProvider.setOpts({
+////        thumbnails: true,
+////        //inline      :   true,
+////        bubbles: true,
+////        imgBubbles: true,
+////        bgClose: false
+////    });
+////})
+//app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
+//    ngImageGalleryOptsProvider.setOpts({
 //        thumbnails: true,
-//        //inline      :   true,
+//        thumbSize: 120,
+//        inline: false,
 //        bubbles: true,
+//        bubbleSize: 100,
 //        imgBubbles: true,
-//        bgClose: false
+//        bgClose: false,
+//        piracy: false,
+//        imgAnim: 'fadeup',
+//        bgClose: true
 //    });
-//})
-app.config(['ngImageGalleryOptsProvider', function (ngImageGalleryOptsProvider) {
-    ngImageGalleryOptsProvider.setOpts({
-        thumbnails: true,
-        thumbSize: 120,
-        inline: false,
-        bubbles: true,
-        bubbleSize: 100,
-        imgBubbles: true,
-        bgClose: false,
-        piracy: false,
-        imgAnim: 'fadeup',
-        bgClose: true
-    });
-}])
+//}])
 
-app.controller('projectsController', function ($scope, $location) {
+angular.module('alphaPhotographyApp').controller('projectsController', function ($scope, $location) {
 
 	var getId = function()
 	{
@@ -94,7 +94,7 @@ app.controller('projectsController', function ($scope, $location) {
     	
 	$scope.addProjectImages = function()
 	{
-		for(var i =0; i <= $scope.imageCount; i++)
+		for(var i =0; i < $scope.imageCount; i++)
 		{
 			var imgPath = projectfolder + (i + 1) + '.jpg';
 			var thumbPath = projectThumbfolder + (i +1) + '.jpg';
